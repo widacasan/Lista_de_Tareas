@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Task from './Task';
 import '../styles/TaskList.css';
+import {  IoSendSharp } from 'react-icons/io5';
 
 /**
  * Componente que representa una lista de tareas.
@@ -101,10 +102,10 @@ function TaskList() {
           type="text"
           value={newTask}
           onChange={handleNewTaskChange}
-          placeholder="Escribe aquí"
+          placeholder="Nueva tarea"
         />
         <button onClick={handleAddTask} className="task-button">
-          Nueva Tarea
+        <IoSendSharp />
         </button>
       </div>
       <div className="button-group">

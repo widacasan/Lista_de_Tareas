@@ -33,14 +33,14 @@ El proyecto se ha desarrollado utilizando las siguientes tecnologías:
 ![Lista de Tareas](./screenshots/TODOlist1.png)
 ![Lista de Tareas](./screenshots/TODOlist2.png)
 
-## Dependencias
+## Instalación y Uso
 
 Asegúrate de tener Node.js y npm instalados en tu máquina antes de continuar.
 
-Para instalar las dependencias necesarias, ejecuta el siguiente comando desde la raíz del proyecto:
-
-''bash
-npm install react react-dom react-icons prop-types classnames.
+1. Ve al directorio del proyecto: `cd task-list-component`
+2. Instala las dependencias: `npm install`
+3. Inicia la aplicación: `npm start`
+4. Abre tu navegador web y visita `http://localhost:3000`
 
 ## Estructura del Proyecto
 
