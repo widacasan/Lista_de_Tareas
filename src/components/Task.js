@@ -67,7 +67,7 @@ function Task({ task, completeTask, deleteTask, editTask }) {
               <IoCreateOutline />
             </button>
             <button onClick={handleCancelClick} className="task-button">
-              Cancel
+              Cancelar
             </button>
           </div>
         </>
