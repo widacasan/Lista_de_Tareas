@@ -1,0 +1,39 @@
+.task-list {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+/**
+ * Estilos para el contenedor de tareas.
+ */
+.task-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/**
+ * Estilos para el botón de tarea.
+ */
+.task-button {
+  margin-left: 8px;
+}
+
+/**
+ * Estilos para el grupo de botones.
+ */
+.button-group {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  margin: 5px;
+}
+
+.task-list-items {
+  list-style: none;
+  padding: 0;
+}
