@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Task from './Task';
 import '../styles/TaskList.css';
-import {  IoSendSharp } from 'react-icons/io5';
+import {  IoSendSharp } from 'react-icons/io5'; //icono
 
 /**
  * Componente que representa una lista de tareas.
@@ -18,14 +18,14 @@ function TaskList() {
    * Maneja el cambio de valor del campo de texto para la nueva tarea.
    * @param {Object} event - Objeto de evento del cambio.
    */
-  const handleNewTaskChange = (event) => {
+  const handleNewTaskChange = (event) => {//cambio de valor del campo de texto para la nueva tarea. 
     setNewTask(event.target.value);
   };
 
   /**
    * Agrega una nueva tarea a la lista de tareas.
    */
-  const handleAddTask = () => {
+  const handleAddTask = () => {//agrega una nueva tarea a la lista de tareas
     if (newTask.trim() !== '') {
       const task = {
         id: Date.now(),
@@ -41,7 +41,7 @@ function TaskList() {
    * Marca una tarea como completada o pendiente.
    * @param {number} taskId - ID de la tarea.
    */
-  const completeTask = (taskId) => {
+  const completeTask = (taskId) => {//marca una tarea como completada o pendiente
     const updatedTasks = tasks.map((task) => {
       if (task.id === taskId) {
         return { ...task, completed: !task.completed };
@@ -56,7 +56,7 @@ function TaskList() {
    * @param {number} taskId - ID de la tarea.
    * @param {string} newText - Nuevo texto de la tarea.
    */
-  const editTask = (taskId, newText) => {
+  const editTask = (taskId, newText) => {//edita el texto de una tarea
     const updatedTasks = tasks.map((task) => {
       if (task.id === taskId) {
         return { ...task, text: newText };
@@ -70,7 +70,7 @@ function TaskList() {
    * Elimina una tarea de la lista.
    * @param {number} taskId - ID de la tarea.
    */
-  const deleteTask = (taskId) => {
+  const deleteTask = (taskId) => {//elimina una tarea de la lista
     const updatedTasks = tasks.filter((task) => task.id !== taskId);
     setTasks(updatedTasks);
   };
@@ -79,7 +79,7 @@ function TaskList() {
    * Filtra las tareas según el tipo de filtro seleccionado.
    * @param {string} filterType - Tipo de filtro ('all', 'completed' o 'pending').
    */
-  const filterTasks = (filterType) => {
+  const filterTasks = (filterType) => {//filtra las tareas según el tipo de filtro seleccionado.
     setFilter(filterType);
   };
 

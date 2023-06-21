@@ -20,29 +20,29 @@ function Task({ task, completeTask, deleteTask, editTask }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedTask, setEditedTask] = useState(task.text);
 
-  const handleCheckboxChange = () => {
+  const handleCheckboxChange = () => {//maneja el cambio de estado del checkbox de completado. 
     completeTask(task.id);
   };
 
-  const handleEditClick = () => {
+  const handleEditClick = () => {//maneja el clic en el botón de editar
     setIsEditing(true);
   };
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event) => {//maneja el cambio de valor del campo de entrada de texto para la edición de la tarea.
     setEditedTask(event.target.value);
   };
 
-  const handleSaveClick = () => {
+  const handleSaveClick = () => {//maneja el clic en el botón de guardar
     editTask(task.id, editedTask);
     setIsEditing(false);
   };
 
-  const handleCancelClick = () => {
+  const handleCancelClick = () => {//maneja el clic en el botón de cancelar
     setIsEditing(false);
     setEditedTask(task.text);
   };
 
-  const handleDeleteClick = () => {
+  const handleDeleteClick = () => {//maneja el clic en el botón de eliminar
     deleteTask(task.id);
   };
 
