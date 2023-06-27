@@ -1,0 +1,38 @@
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  /**
+   * Estilos para el checkbox de la tarea.
+   */
+  .task-checkbox {
+    margin-right: 8px;
+  }
+  
+  /**
+   * Estilos para la tarea completada.
+   */
+  .completed {
+    text-decoration: line-through;
+  }
+  
+  .button-group {
+    display: flex;
+  }
+  
+  /**
+   * Estilos para los botones de tarea.
+   */
+  .task-button {
+    margin-right: 4px;
+  }
+  
+  /**
+   * Estilos para el campo de entrada de tarea en modo edición.
+   */
+  .task-input {
+    margin-right: 8px;
+  }
+  
